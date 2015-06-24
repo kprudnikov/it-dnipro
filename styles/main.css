@@ -1,5 +1,2 @@
-main {
-  max-width: 1140px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
-
+main{max-width:1280px;box-shadow:0 0 10px rgba(0,0,0,0.3)}.row{position:relative}.row>section{float:left}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}
 /*# sourceMappingURL=main.css.map */
