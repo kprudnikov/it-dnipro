@@ -1,36 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1, width=device width">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
   <link rel="stylesheet" href="styles/main.css">
-  <title>IT-Dnipro</title>
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <title>it_dnipro</title>
 </head>
 <body>
+  <div class="cloak"></div>
+  <div class="popup">
+    <div class="close" tabindex="0">&times;</div>
+    <h3>Участвовать в проекте</h3>
+    <p>Мы меняем наш город, и если тебе интересно то, что мы делаем, или ты хочешь быть среди нас - напиши нам.</p>
+    <form action="">
+      <div class="form-group">
+        <label for="popup-email" class="sr-only">Электронная почта</label>
+        <img src="/images/ico-envelope.png" class="icon" alt="icon envelope" aria-hidden="true">
+        <input type="email" id="popup-email" name="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label for="popup-name" class="sr-only">Ваше имя</label>
+        <img src="/images/ico-silhouette.png" class="icon" alt="" aria-hidden="true">
+        <input type="text" id="popup-name" name="name" placeholder="Ваше имя">
+      </div>
+      <div class="form-group">
+        <label for="popup-phone" class="sr-only">Телефон</label>
+        <img src="/images/ico-phone.png" class="icon" alt="" aria-hidden="true">
+        <input type="text" id="popup-phone" name="phone" placeholder="Телефон">
+        <!-- <textarea id="popup-offer-description" name="description" cols="30" rows="5" placeholder="Описание проекта"></textarea> -->
+      </div>
+      <input type="submit" value="Отправить" class="button button-default text-invert">
+    </form>
+  </div>
+  <nav ></nav>
   <main>
-    <div class="row">
-      <section></section>
-    </div>
-    <div class="row">
-      <section>
-        <p>Test</p>
+    <div class="row clearfix">
+      <section id="slogan">
+        <h1 class="logo">It-Dnipro</h1>
+        <p>Организация айти-предпринимателей Днепропетровска, которые хотят и могут влиять на развитие региона и отрасли.</p>
+        <button class="button-default text-invert js-participate">Присоединиться</button>
       </section>
-      <section>
-        <p>Test</p>
-        <p>Test</p>
+      <section id="partners" class="clearfix">
+        <div class="partner-logo">
+          <a href="http://111minutes.com/">
+            <img src="/images/logo-111minutes.png" alt="111 minutes">
+          </a>
+        </div>
+
+        <div class="partner-logo">
+          <a href="http://itschool-hillel.org/">
+            <img src="/images/logo-hillel-it.png" alt="Hillel IT school">
+          </a>
+        </div>
+
+        <div class="partner-logo">
+          <a href="https://anadea.info/">
+            <img src="/images/logo-anadea.png" alt="Anadea">
+          </a>
+        </div>
+
+        <div class="partner-logo">
+          <a href="http://www.mobindustry.net/">
+            <img src="/images/logo-mobindustry.png" alt="Mobindustry">
+          </a>
+        </div>
+
+        <div class="partner-logo">
+          <a href="http://item.dp.ua/">
+            <img src="/images/logo-item.png" alt="Item">
+          </a>
+        </div>
+
+        <div class="partner-logo">
+          <a href="http://new-norm.com/">
+            <img src="/images/logo-new-norm.png" alt="New norm">
+          </a>
+        </div>
+
+        <div class="partner-logo">
+          <a href="http://www.archer-soft.com/">
+            <img src="/images/logo-archer.png" alt="Archer">
+          </a>
+        </div>
+
+        <div class="partner-logo">
+          <a href="http://cartonator.com/">
+            <img src="/images/logo-cartonator.png" alt="Cartonator">
+          </a>
+        </div>
+
+        <div class="partner-logo">
+          <a href="http://itstep.org/">
+            <img src="/images/logo-it-step.png" alt="IT Step">
+          </a>
+        </div>
+
+        <div class="partner-logo">
+          <a href="http://indigo.co.ua/">
+            <img src="/images/logo-indigo.png" alt="Indigo">
+          </a>
+        </div>
+
+        <div class="partner-logo">
+          <a href="http://www.innovationbox.com.ua/">
+            <img src="/images/logo-innovation-box.png" alt="Innovation Box">
+          </a>
+        </div>
       </section>
     </div>
-    <div class="row">
-      <section></section>
-      <section></section>
+    <div class="row align">
+      <section id="reorientation">
+        <h2>Профессиональная переориентация</h2>
+        <p>Проект профессиональной и психологической подготовки для молодых и немолодых специалистов, которые хотят в айти-сферу.</p>
+        <button class="button-dark text-invert button-invisible js-participate">Мне интересно</button>
+      </section>
+      <section id="club">
+        <h2>Клубная система для сотрудников айти компаний</h2>
+          <p>Как получить лучшие места в кино- и просто театры, купить билет на конференцию и заказать пиццу по лучшей цене, где лучше починить машину или велосипед. Это и многое другое для сотрудников компаний-участников Клуба.</p>
+          <button class="button-dark text-invert button-invisible js-participate">Мне интересно</button>
+      </section>
     </div>
-    <div class="row">
-      <section></section>
-      <section></section>
+    <div class="row clearfix">
+      <section id="description" class="text-invert">
+        <h2>Единый региональный информационный айти-портал</h2>
+        <p>Описание всех событий, тренингов, курсов, мероприятий и новостей, проводимых и совершенных в Днепропетровске. Тематика: айти и около-айти (велосипеды, музыка, кафе, кино, арт-хаус).</p>
+        <button class="button-dark text-invert button-invisible js-participate">Мне интересно</button>  
+      </section>
     </div>
+    <div class="row align">
+      <section id="kindergarten" class="text-invert">
+        <h2>Айтишный детский сад</h2>
+        <p>Уникальное место для дошкольников, где родители могут больше не беспокоиться о безопасности и окружении своих детей. Профессиональные педагоги, веб-камеры, личный интернет-кабинет родителя, программа развития и подготовки к школе, отсутствие советского наследия.</p>
+        <button class="button-dark text-invert button-invisible js-participate">Мне интересно</button>  
+
+      </section>
+      <section id="coworking">
+        <h2>Доступный коворкинг</h2>
+        <p>Сеть доступных коворкингов для фрилансеров, стартап команд и всех, кому интересно общение с новыми людьми, которая позволит обмениваться знаниями и профессиональным опытом.</p>
+        <button class="button-dark text-invert button-invisible js-participate">Мне интересно</button>
+      </section>
+    </div>
+    <div class="row align">
+      <section id="aims" class="text-invert">
+        <h2>Цели кластера</h2>
+        <ol>
+          <li>Обеспечить плодотворную инвестиционную и бизнесовую IT среду</li>
+          <li>Увеличить количество и качество IT специалистов</li>
+          <li>Создать благоприятные условия для ведения IT бизнеса</li>
+        </ol>
+      </section>
+      <section id="offer" class="text-invert">
+        <h2>Предложите свой проект</h2>
+        <p>Вы хотите помочь развитию региона, но не нашли здесь проект, который вас заинтересовал? Напишите нам, и мы с вами свяжемся.</p>
+        <form action="">
+          <div class="form-group">
+            <label for="email" class="sr-only">Электронная почта</label>
+            <img src="/images/ico-envelope.png" class="icon" alt="icon envelope" aria-hidden="true">
+            <input type="email" id="email" name="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="name" class="sr-only">Ваше имя</label>
+            <img src="/images/ico-silhouette.png" class="icon" alt="" aria-hidden="true">
+            <input type="text" id="name" name="name" placeholder="Ваше имя">
+          </div>
+          <div class="form-group">
+            <label for="offer-description" class="sr-only">Описание проекта</label>
+            <img src="/images/ico-lightbulb.png" class="icon" alt="" aria-hidden="true">
+            <textarea id="offer-description" name="description" cols="30" rows="5" placeholder="Описание проекта"></textarea>
+          </div>
+          <input type="submit" value="Отправить" class="button">
+        </form>
+      </section>
+    </div>
+    <footer>
+      <img src="/images/logo-main-small.png" alt="it-dnipro">
+    </footer>
   </main>
-  <footer>
-  </footer>
+
+  <script>
+  function Popup (popup, cloak) {
+    this.cloak = cloak;
+    this.popup = popup;
+    this.close = popup.querySelector('.close');
+    this.handleEvents();
+  };
+
+  Popup.prototype.show = function() {
+    console.log(this);
+    this.cloak.style.display = "block";
+    this.popup.style.display = "block";
+  };
+
+  Popup.prototype.hide = function() {
+    this.cloak.style.display = "none";
+    this.popup.style.display = "none";
+  };
+
+  Popup.prototype.handleEvents = function() {
+    console.log(this);
+    this.cloak.onclick = (function () {
+      this.hide();
+    }).bind(this);
+
+    this.close.onclick = (function () {
+      this.hide();
+    }).bind(this);
+  };
+
+  function hasClass (element, selector) {
+    var className = " " + selector + " ";
+    return (" " + element.className + " ").replace(/[\n\t]/g, " ").indexOf(className) > -1;
+  } 
+
+  var popup = new Popup(document.querySelector('.popup'), document.querySelector('.cloak'));
+
+  document.querySelector('main').onclick = function (event) {
+    if(hasClass(event.target, 'js-participate')) {
+      popup.show();
+    }
+  }
+
+  </script>
 </body>
 </html>
