@@ -11,7 +11,7 @@
 <body>
   <div class="cloak"></div>
   <div class="popup">
-    <div class="close" tabindex="0">&times;</div>
+    <button class="close">&times;</button>
     <h3>Участвовать в проекте</h3>
     <p>Мы меняем наш город, и если тебе интересно то, что мы делаем, или ты хочешь быть среди нас - напиши нам.</p>
     <form action="">
@@ -29,7 +29,6 @@
         <label for="popup-phone" class="sr-only">Телефон</label>
         <img src="/images/ico-phone.png" class="icon" alt="" aria-hidden="true">
         <input type="text" id="popup-phone" name="phone" placeholder="Телефон">
-        <!-- <textarea id="popup-offer-description" name="description" cols="30" rows="5" placeholder="Описание проекта"></textarea> -->
       </div>
       <input type="submit" value="Отправить" class="button button-default text-invert">
     </form>
@@ -188,7 +187,6 @@
   };
 
   Popup.prototype.show = function() {
-    console.log(this);
     this.cloak.style.display = "block";
     this.popup.style.display = "block";
   };
@@ -199,7 +197,6 @@
   };
 
   Popup.prototype.handleEvents = function() {
-    console.log(this);
     this.cloak.onclick = (function () {
       this.hide();
     }).bind(this);
@@ -207,6 +204,12 @@
     this.close.onclick = (function () {
       this.hide();
     }).bind(this);
+
+    document.addEventListener('keyup', (function(e){
+          if(e.keyCode == 27){
+            this.hide();
+          }
+        }).bind(this), false);
   };
 
   function hasClass (element, selector) {
