@@ -90,7 +90,7 @@ h1.logo {
 
 .button-dark {
   background-color: #333333;
-  border-color: #333333;  
+  border-color: #333333;
 }
 
 .button-dark:hover {
@@ -130,7 +130,7 @@ h1.logo {
   margin: -1px;
   overflow: hidden;
   clip: rect(0,0,0,0);
-  border: 0;  
+  border: 0;
 }
 
 .form-group {
@@ -179,10 +179,10 @@ h1.logo {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   @media all and (max-width: $width-sm) {
     background-image: url("../images/backgr-reorient-mob.png");
-  }  
+  }
 }
 
 #club {
@@ -191,10 +191,10 @@ h1.logo {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   @media all and (max-width: $width-sm) {
     background-image: url("../images/backgr-club-mob.png");
-  }  
+  }
 }
 
 #description {
@@ -217,7 +217,7 @@ h1.logo {
 
   @media all and (max-width: $width-sm) {
     background-image: url("../images/backgr-kindergarten-mob.png");
-  }  
+  }
 }
 
 #coworking {
@@ -231,7 +231,7 @@ h1.logo {
     background-image: url("../images/backgr-coworking-mob-small.png");
     background-size: initial;
     background-position: 115% 120%;
-  }  
+  }
 }
 
 #aims {
@@ -251,7 +251,7 @@ h1.logo {
     border-radius: 50%;
     border: 1px solid #d2ca6d;
     position: absolute;
-    top: -1px;
+    top: -2px;
     left: -30px;
   }
 }
