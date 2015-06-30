@@ -246,13 +246,13 @@ h1.logo {
   li:before {
     content: " ";
     display: block;
-    height: 25px;
-    width: 25px;
+    height: 1.5625em;
+    width: 1.5625em;
     border-radius: 50%;
     border: 1px solid #d2ca6d;
     position: absolute;
-    top: -2px;
-    left: -30px;
+    top: -0.125em;
+    left: -1.875em;
   }
 }
 
